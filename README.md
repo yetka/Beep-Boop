@@ -15,7 +15,7 @@ It is a web application (using HTML, CSS, JavaScript and jQuery) that takes a nu
   * Exemple Input: 11
   * Exemple Output: "Boop!"
 * When provided number contains a 0, is replaced with "Beep!"
-  * Exemple Input: 10
+  * Exemple Input: 20
   * Exemple Output: "Beep!"
 * When provided number is divisible by 3, is replaced with "I'm sorry, Dave. I'm afraid I can't do that."
   * Exemple Input: 3
