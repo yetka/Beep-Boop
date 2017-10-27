@@ -1,8 +1,8 @@
 //back-end
-var beebBoop = function (inputNumber) {
+var beebBoop = function (inputNumber, userName) {
   var numbers = "";
   if (inputNumber % 3 === 0) {
-    return numbers.concat("I'm sorry, Dave. I'm afraid I can't do that.")
+    return numbers.concat("I'm sorry, " + userName + ". I'm afraid I can't do that.")
   } else {
     stringNumber = inputNumber.toString();
     if ((stringNumber.includes("1")) || (stringNumber.includes("0"))) {
@@ -30,8 +30,12 @@ $(document).ready(function() {
   $("#userInput").submit(function(event) {
     event.preventDefault();
     var userNumber = parseInt($("#userNumber").val());
-    var result = beebBoop(userNumber);
+    var userName = $("#userName").val();
+    var result = beebBoop(userNumber, userName);
     $(".display").show();
+    $("#userInput").each(function() {
+      this.reset();
+    });
     $(".gameResult").text(result);
   });
 });
