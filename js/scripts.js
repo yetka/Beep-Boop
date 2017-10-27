@@ -31,7 +31,7 @@ $(document).ready(function() {
     event.preventDefault();
     var userNumber = parseInt($("#userNumber").val());
     var result = beebBoop(userNumber);
-    $(".result").show();
-    $("#gameResult").text(result);
+    $(".display").show();
+    $(".gameResult").text(result);
   });
 });
