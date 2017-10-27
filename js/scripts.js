@@ -1,23 +1,27 @@
 //back-end
 var beebBoop = function (inputNumber, userName) {
   var numbers = "";
-  if (inputNumber % 3 === 0) {
-    return numbers.concat("I'm sorry, " + userName + ". I'm afraid I can't do that.")
+  if ((!inputNumber) || (inputNumber < 0)) {
+    alert("Please enter a number that is greater than 0");
   } else {
-    stringNumber = inputNumber.toString();
-    if ((stringNumber.includes("1")) || (stringNumber.includes("0"))) {
-        if (stringNumber.includes("0")) {
-          numbers = numbers.concat("Beep!");
-        };
-        if (stringNumber.includes("1")) {
-          numbers = numbers.concat("Boop!");
-        };
-      return numbers;
+    if (inputNumber % 3 === 0) {
+      return numbers.concat("I'm sorry, " + userName + ". I'm afraid I can't do that.")
     } else {
-      for (index = 0; index <= stringNumber; index++) {
-        numbers = numbers.concat(index + ",");
+      stringNumber = inputNumber.toString();
+      if ((stringNumber.includes("1")) || (stringNumber.includes("0"))) {
+          if (stringNumber.includes("0")) {
+            numbers = numbers.concat("Beep!");
+          };
+          if (stringNumber.includes("1")) {
+            numbers = numbers.concat("Boop!");
+          };
+        return numbers;
+      } else {
+        for (index = 0; index <= stringNumber; index++) {
+          numbers = numbers.concat(index + ",");
+        };
+        return numbers;
       };
-      return numbers;
     };
   };
 };
