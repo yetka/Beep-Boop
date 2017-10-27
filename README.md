@@ -20,7 +20,9 @@ It is a web application (using HTML, CSS, JavaScript and jQuery) that takes a nu
 * When provided number is divisible by 3, is replaced with "I'm sorry, Dave. I'm afraid I can't do that."
   * Exemple Input: 3
   * Exemple Output: "I'm sorry, Dave. I'm afraid I can't do that."
-
+* It can take user name and use it in returned message when provided number is divisible by 3:
+  * Exemple Input: "Gosia"
+  * Exemple Output: "I'm sorry, Gosia. I'm afraid I can't do that."
 
 ## Setup/Installation Requirements
 
