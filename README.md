@@ -7,7 +7,7 @@
 ## Description
 It is a web application (using HTML, CSS, JavaScript and jQuery) that takes a number from a user and returns a range of numbers from 0 to the chosen number with few exceptions when returns sentences.
 
-##Specifications
+## Specifications
 * It can count up to the provided number:
   * Exemple Input: 3
   * Exemple Output: [1,2,3]
