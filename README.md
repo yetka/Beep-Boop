@@ -23,6 +23,9 @@ It is a web application (using HTML, CSS, JavaScript and jQuery) that takes a nu
 * It can take user name and use it in returned message when provided number is divisible by 3:
   * Exemple Input: "Gosia"
   * Exemple Output: "I'm sorry, Gosia. I'm afraid I can't do that."
+* When user number is not a number or it is smaller than 0, it will pop up an alert "Please enter a number that is greater than 0"
+  * Exemple Input: -3
+  * Exemple Output: (alert) "Please enter a number that is greater than 0"
 
 ## Setup/Installation Requirements
 
